@@ -24,15 +24,15 @@
   /* 상단 배너 */
   /* 상단 배너 배경 색 */
   /* --top-banner-bg: var(--body-bg); */
-  --top-banner-bg: #000000;
+  --top-banner-bg: #787dcb;
   /* 상단 배너 글자 색 */
   --top-banner-font: #ffffff;
 
   /* 빅 버튼 */
   /* 빅 버튼 배경 색 */
-  --cta-button-bg: #01c0e2;
+  --cta-button-bg: #ffffff;
   /* 빅 버튼 글자 색 */
-  --cta-button-font: #ffffff;
+  --cta-button-font: #787dcb;
 
   /* 상단 배너 버튼 */
   /* 상단 배너 버튼 배경 색 */
@@ -239,6 +239,7 @@ nav {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  padding-bottom: 100px;
 }
 
 /* 각 섹션 */
@@ -250,6 +251,7 @@ nav {
 #service-section > .section-title {
   background-color: var(--service-title-bg);
   color: var(--service-title-font);
+  margin-top: 100px;
 }
 
 #service-section > .grid-3fr > .card__ {
@@ -267,6 +269,7 @@ nav {
 #product-section > .section-title {
   background-color: var(--product-title-bg);
   color: var(--product-title-font);
+  margin-top: 100px;
 }
 
 #product-section > .grid-3fr > .card__ {
@@ -290,6 +293,7 @@ nav {
 #team-section > .section-title {
   background-color: var(--team-title-bg);
   color: var(--team-title-font);
+  margin-top: 200px;
 }
 
 #team-section > .grid-4fr > .card__ {
