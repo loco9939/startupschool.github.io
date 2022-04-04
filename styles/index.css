@@ -19,7 +19,7 @@
   /* 상단 바 배경 색 */
   --header-bg: var(--body-bg);
   /* 상단 바 글자 색 */
-  --header-font: #000000;
+  --header-font: #2753d5;
 
   /* 상단 배너 */
   /* 상단 배너 배경 색 */
@@ -32,7 +32,7 @@
   /* 빅 버튼 배경 색 */
   --cta-button-bg: #ffffff;
   /* 빅 버튼 글자 색 */
-  --cta-button-font: #787dcb;
+  --cta-button-font: #2061Eb;
 
   /* 상단 배너 버튼 */
   /* 상단 배너 버튼 배경 색 */
@@ -169,6 +169,7 @@ footer {
   height: 150px;
   border: 1px solid white;
   border-radius: 50%;
+  background-color: #4764d3;
 }
 
 .cir > h2 {
@@ -241,6 +242,7 @@ nav {
 
 .nav__link {
   margin-left: 24px;
+  color: #7e7e7e;
 }
 
 .top-banner {
