@@ -48,7 +48,7 @@
 
   /* 전체 구역 색상 */
   /* 배경 색 */
-  --section-title-bg: var(--body-bg);
+  /* --section-title-bg: var(--body-bg); */
   /* 글자 색 */
   --section-title-font: #000000;
   /* 카드 색 */
@@ -57,7 +57,7 @@
   --section-card-title-font: #000000;
   /* 카드 설명 색 */
   --section-card-subtitle-font: #737373;
-  
+
   /* Service */
   /* 배경 색 */
   --service-title-bg: var(--section-title-bg);
@@ -87,7 +87,7 @@
   --tag-bg: #f5f5f5;
   /* 글자 색 */
   --tag-font: #737373;
-  
+
   /* Team */
   /* 배경 색 */
   --team-title-bg: var(--section-title-bg);
@@ -156,14 +156,68 @@ footer {
   color: var(--footer-font-main);
 }
 
+.col {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cir {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.cir > h2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cir > h3 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  color: white;
+  font-weight: bold;
+}
+.next {
+  text-align: center;
+  margin-right: -800px;
+  margin-top: 20px;
+}
+
+.next > h2 {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+}
 
 a {
   text-decoration: none;
   display: block;
 }
+
+p {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
 /* 헤더 */
 .header__logo {
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 nav {
@@ -176,7 +230,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  width: 100%;
 }
 
 .nav {
@@ -190,14 +245,15 @@ nav {
 
 .top-banner {
   height: 400px;
-  background: var(--top-banner-bg);
+  /* background: var(--top-banner-bg); */
+  background: linear-gradient(to bottom right, #1C66EF, #422798);
   color: var(--top-banner-font);
   display: flex;
 }
 
 /* 탑배너 */
 .top-banner__content {
-  margin: 123px 137px 48px 107px;
+  margin: 90px 137px 48px 107px;
 }
 
 .top-banner__right {
@@ -210,6 +266,7 @@ nav {
   font-family: "Pretendard";
   font-weight: 700;
 }
+
 .regular {
   font-family: "Pretendard";
   font-weight: 400;
@@ -226,7 +283,7 @@ nav {
 }
 
 .top-banner__cta-button {
-  margin-top: 67px;
+  margin-top: 36px;
   background: var(--cta-banner-button-bg);
   color: var(--cta-banner-button-font);
   width: 310px;
@@ -248,83 +305,112 @@ nav {
   margin: 75px 24px 0px 24px;
 }
 
-#service-section > .section-title {
+.wrap {
+  background: linear-gradient(to bottom right, #1C66EF, #422798);
+  width: 1024px;
+  height: 850px;
+  overflow: hidden;
+}
+
+.t-left {
+  text-align: left;
+}
+
+#service-section>.section-title {
   background-color: var(--service-title-bg);
   color: var(--service-title-font);
   margin-top: 100px;
+  font-size: 28px;
 }
 
-#service-section > .grid-3fr > .card__ {
+#service-section>.grid-3fr>.card__ {
   background-color: var(--service-card-bg);
 }
 
-#service-section > .grid-3fr > .card__ > .card__title {
+#service-section>.grid-3fr>.card__>.card__title {
   color: var(--service-card-title-font);
 }
 
-#service-section > .grid-3fr > .card__ > .card__subtitle {
+#service-section>.grid-3fr>.card__>.card__subtitle {
   color: var(--service-card-subtitle-font);
 }
 
-#product-section > .section-title {
+#product-section>.section-title {
   background-color: var(--product-title-bg);
-  color: var(--product-title-font);
+  color: white;
   margin-top: 100px;
 }
 
-#product-section > .grid-3fr > .card__ {
+#product-section>.grid-3fr>.card__ {
   background-color: var(--product-card-bg);
 }
 
-#product-section > .grid-3fr > .card__ > .card__title {
+#product-section>.grid-3fr>.card__>.card__title {
   color: var(--product-card-title-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__subtitle {
+#product-section>.grid-3fr>.card__>.card__subtitle {
   color: var(--product-card-subtitle-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__tag {
+#product-section>.grid-3fr>.card__>.card__tag {
   color: var(--product-card-tag-font);
   background-color: var(--product-card-tag-bg);
 }
 
 
-#team-section > .section-title {
+#team-section>.section-title {
   background-color: var(--team-title-bg);
-  color: var(--team-title-font);
-  margin-top: 200px;
+  color: #363DB6;
+  margin-top: 80px;
 }
 
-#team-section > .grid-4fr > .card__ {
+#team-section>.grid-4fr>.card__ {
   background-color: var(--team-card-bg);
 }
 
-#team-section > .grid-4fr > .card__ > .card__title {
+#team-section>.grid-4fr>.card__>.card__title {
   color: var(--team-card-title-font);
 }
 
-#team-section > .grid-4fr > .card__ > .card__subtitle {
+#team-section>.grid-4fr>.card__>.card__subtitle {
   color: var(--team-card-subtitle-font);
 }
 
-#team-section > .grid-4fr > .card__ > .card__tag {
+#team-section>.grid-4fr>.card__>.card__tag {
   color: var(--team-card-tag-font);
   background-color: var(--team-card-tag-bg);
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+.pl-50 {
+  padding-left: 70px;
+}
+
+.mid-img {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
 .section-title__main {
-  font-size: 30px;
-  margin-bottom: 11px;
+  font-size: 28px;
   line-height: 37.5px;
 }
 
 .section-title__sub {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   margin-bottom: 49px;
+  color: #7e7e7e;
 }
-
+.va {
+  margin-top: 0px;
+}
 .grid-3fr {
   display: grid;
   grid-gap: 24px;
@@ -351,6 +437,7 @@ nav {
   padding: 2px 0px;
   margin-bottom: 4px;
 }
+
 .card__subtitle {
   font-size: 16px;
   line-height: 24px;
@@ -401,9 +488,11 @@ nav {
 .footer__top {
   display: flex;
 }
+
 .footer__top__logo {
   width: 50%;
 }
+
 .footer__top__info {
   width: 50%;
   display: flex;
