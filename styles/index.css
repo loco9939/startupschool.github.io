@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Semi-Bold-Pretendard";
+  font-family: "Semi-Pretendard";
   src: url("../statics/fonts/Pretendard/SemiBold.woff") format("woff"),
     url("../statics/fonts/Pretendard/SemiBold.ttf") format("truetype");
 }
@@ -172,7 +172,7 @@ footer {
   background-color: #4764d3;
 }
 
-.cir > h2 {
+.cir>h2 {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -182,21 +182,22 @@ footer {
   font-size: 24px;
 }
 
-.cir > h3 {
+.cir>h3 {
   text-align: center;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
   color: white;
-  font-weight: bold;
+  font-weight: 400;
 }
+
 .next {
   text-align: center;
   margin-right: -800px;
   margin-top: 20px;
 }
 
-.next > h2 {
+.next>h2 {
   font-size: 16px;
   color: white;
   margin-top: 10px;
@@ -210,10 +211,17 @@ a {
 p {
   margin-bottom: 12px;
   margin-top: 12px;
+  font-weight: 300;
 }
 
 h2 {
   font-size: 32px;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+  line-height: 18px;
 }
 
 /* 헤더 */
@@ -275,7 +283,8 @@ nav {
 }
 
 .top-banner__title {
-  font-size: 24px;
+  width: 450px;
+  font-size: 32px;
   line-height: 33px;
 }
 
@@ -299,6 +308,7 @@ nav {
   height: 400px;
   object-fit: cover;
   padding-bottom: 100px;
+  margin-left: -140px;
 }
 
 /* 각 섹션 */
@@ -387,20 +397,21 @@ nav {
 .pt-100 {
   padding-top: 100px;
 }
+
 .pl-50 {
   padding-left: 70px;
 }
 
 .mid-img {
-  width: 95%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  margin: 40px 80px;
 }
 
 .section-title__main {
-  font-size: 28px;
+  font-size: 32px;
   line-height: 37.5px;
 }
 
@@ -410,9 +421,11 @@ nav {
   margin-bottom: 49px;
   color: #7e7e7e;
 }
+
 .va {
   margin-top: 0px;
 }
+
 .grid-3fr {
   display: grid;
   grid-gap: 24px;
